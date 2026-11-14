@@ -1,0 +1,102 @@
+/* Modification ciblée de la barre d'en-tête (header) */
+.md-header {
+  background-color: #41a3a3 !important; /* Votre code couleur personnalisé */
+}
+.md-content h3 {
+  font-weight:400;
+}
+/* mettre tous les elements gris */
+.md-typeset {
+  color: #666666 !important;
+}
+
+/* Couleur du lien actif dans le menu latéral gauche et la table des matières droite */
+.md-nav__link--active,
+.md-nav__item .md-nav__link--active {
+  color: #41a3a3 !important;
+  font-weight: bold; /* Optionnel : met l'élément actif en gras */
+}
+
+/* Couleur au survol de la souris (hover) pour harmoniser l'ensemble */
+.md-nav__link:hover,
+.md-nav__link:focus {
+  color: #41a3a3 !important;
+}
+
+/* couleur des liens au survol, predefini autrement par defaut */
+:root {
+  --md-primary-fg-color: #7e4d73;
+  --md-accent-fg-color: #7e4d73;
+  --md-footer-bg-color: #ffffff !important;
+  --md-footer-bg-color--dark: #ffffff !important;
+}
+
+/* Arrondir le champ de recherche dans le header */
+.md-search__input {
+  border-radius: 25px !important; /* Ajustez le nombre de pixels selon l'arrondi souhaité (ex: 20px pour un effet pilule) */
+}
+
+/* Optionnel : arrondir aussi le conteneur du champ de recherche pour éviter les débordements */
+.md-search__inner {
+  border-radius: 25px !important;
+}
+
+/* carte de chaque section */
+.carte-debutant {
+  background-color: #82f86b4d; 
+  padding: 2px 20px 2px 20px;             
+  border-radius: 25px;        
+  margin-bottom: 20px;       
+}
+.carte-intermediaire {
+  background-color: #8789fd4d; 
+  padding: 2px 20px 2px 20px;             
+  border-radius: 25px;        
+  margin-bottom: 20px;       
+}
+.carte-expert {
+  background-color: #fd85854d; 
+  padding: 2px 20px 2px 20px;             
+  border-radius: 25px;        
+  margin-bottom: 20px;       
+}
+
+.objectif{
+  background-color:#fff;
+  padding: 2px 20px 2px 20px;             
+  border-radius: 25px;        
+  margin-bottom: 20px; 
+}
+
+/* 1. Changer le fond du footer en blanc (ou la couleur de votre choix) */
+.md-footer {
+  background-color: #ffffff !important;
+  margin: 60px 200px 30px 200px;
+  border-top: 1px solid #a5a3a3 !important;
+}
+
+/* 2. Changer la couleur du texte et des liens du footer pour qu'ils restent lisibles sur fond clair */
+.md-footer, 
+.md-footer a,
+.md-footer p,
+.md-footer-meta, 
+.md-footer-meta a {
+  color: #a5a3a3 !important;
+  font-weight:600;
+}
+
+.md-footer, 
+.md-footer-meta {
+  background-color: #ffffff !important;
+}
+
+/* Applique la couleur grise à tout le texte libre et aux éléments du copyright */
+.md-copyright {
+  color: #a5a3a3 !important;
+}
+
+/* S'assure que les liens à l'intérieur du copyright héritent aussi de cette couleur ou d'une autre */
+.md-copyright a {
+  color: #a5a3a3 !important;
+  text-decoration: underline; /* Optionnel : pour distinguer les liens */
+}
