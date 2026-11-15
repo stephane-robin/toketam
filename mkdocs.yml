@@ -5,7 +5,7 @@ theme:
   logo: assets/symbole.png
 repo_url: https://github.com/stephane-robin/toketam.git
 
-# configuration de blocs de code
+# configuration de blocs de code et extensions
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -14,6 +14,8 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - attr_list
+  - md_in_html
 
 # definition du menu
 nav:
@@ -25,14 +27,8 @@ nav:
 extra_css:
   - stylesheets/extra.css
 
-# traduit le html de la page
-markdown_extensions:
-  - attr_list
-  - md_in_html
-
 # copyright du footer
 extra:
   generator: false
 
-copyright: <p>S. Robin — made with <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">Material for MkDocs</a></p>
-
+copyright: <span style="color:#a5a3a3;">S. Robin — made with</span> <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">Material for MkDocs</a>
